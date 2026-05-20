@@ -37,3 +37,28 @@
     margin-right: 12px;
   }
 }
+
+.aucun-resultat {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 2px dashed #dcdde1;
+}
+
+.aucun-resultat p:first-child {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.aucun-resultat p:last-child {
+  font-size: 0.9rem;
+}
+
+.compteur-recherches {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 12px;
+  text-align: right;
+}
