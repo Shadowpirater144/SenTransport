@@ -9,6 +9,9 @@ CORS(app)
 with open("lignes_ddd.json", "r") as f:
     lignes = json.load(f)
 
+with open("arrets.json", "r") as f:
+    arrets = json.load(f)
+
 
 # ─── Endpoints de base ────────────────────────────────────────────────────────
 
@@ -40,11 +43,7 @@ def get_ligne(ligne_id):
 
 @app.route("/arrets")
 def get_arrets():
-    tous_les_arrets = set()
-    for ligne in lignes:
-        for arret in ligne["listeArrets"]:
-            tous_les_arrets.add(arret)
-    return jsonify(sorted(list(tous_les_arrets)))
+    return jsonify(arrets)
 
 
 # ─── Exercice 2 : statistiques ────────────────────────────────────────────────
@@ -78,6 +77,29 @@ def recherche_lignes():
         if q in l["depart"].lower() or q in l["arrivee"].lower()
     ]
     return jsonify(resultats)
+
+
+# ─── L'ajouter l'endpoint ─────────────────────────────────────────────────────
+
+incidents = []
+
+@app.route("/incidents", methods=["GET"])
+def get_incidents():
+    return jsonify(incidents)
+
+@app.route("/incidents", methods=["POST"])
+def post_incident():
+    data = request.get_json()
+    if not data or "ligne" not in data or "description" not in data:
+        return jsonify({"erreur": "Champs requis manquants"}), 400
+    incident = {
+        "id": len(incidents) + 1,
+        "ligne": data["ligne"],
+        "description": data["description"],
+        "lieu": data.get("lieu", "Non precise"),
+    }
+    incidents.append(incident)
+    return jsonify(incident), 201
 
 
 #─── Lancement  ───

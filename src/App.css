@@ -83,5 +83,24 @@
 .erreur-detail {
     color: #e74c3c;
     font-family: monospace;
-    font-size: 0.9rem;
+ 
+   font-size: 0.9rem;
 }
+
+/* ========== EXERCICE 1 : bouton Recharger ========== */
+.btn-recharger {
+  display: block;
+  margin: 0 0 16px auto;
+  padding: 8px 18px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-recharger:hover {
+  background-color: #1f6391;
+}
+/* ========== EXERCICE 1 : fin ========== */

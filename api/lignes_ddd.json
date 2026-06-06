@@ -5,16 +5,7 @@
     "depart": "Parcelles Assainies",
     "arrivee": "Plateau",
     "arrets": 14,
-    "listeArrets": [
-      "Parcelles U14",
-      "Parcelles U10",
-      "Camberene",
-      "Patte d'Oie",
-      "Grand Dakar",
-      "Colobane",
-      "Ponty",
-      "Plateau"
-    ]
+    "listeArrets": ["Parcelles U14","Parcelles U10","Camberene","Patte d'Oie","Grand Dakar","Colobane","Ponty","Plateau"]
   },
   {
     "id": 2,
@@ -22,16 +13,7 @@
     "depart": "Guediawaye",
     "arrivee": "Place Obe",
     "arrets": 18,
-    "listeArrets": [
-      "Guediawaye",
-      "Pikine",
-      "Thiaroye",
-      "Keur Massar",
-      "Grand Yoff",
-      "Parcelles",
-      "Liberte 6",
-      "Place Obe"
-    ]
+    "listeArrets": ["Guediawaye","Pikine","Thiaroye","Keur Massar","Grand Yoff","Parcelles","Liberte 6","Place Obe"]
   },
   {
     "id": 3,
@@ -39,14 +21,7 @@
     "depart": "Pikine",
     "arrivee": "Medina",
     "arrets": 12,
-    "listeArrets": [
-      "Pikine Centre",
-      "Thiaroye Gare",
-      "Hann",
-      "Colobane",
-      "Fass",
-      "Medina"
-    ]
+    "listeArrets": ["Pikine Centre","Thiaroye Gare","Hann","Colobane","Fass","Medina"]
   },
   {
     "id": 4,
@@ -54,14 +29,7 @@
     "depart": "Ouakam",
     "arrivee": "Grand Dakar",
     "arrets": 10,
-    "listeArrets": [
-      "Ouakam Village",
-      "Mermoz",
-      "Fann",
-      "Point E",
-      "Liberte 5",
-      "Grand Dakar"
-    ]
+    "listeArrets": ["Ouakam Village","Mermoz","Fann","Point E","Liberte 5","Grand Dakar"]
   },
   {
     "id": 5,
@@ -69,14 +37,7 @@
     "depart": "Almadies",
     "arrivee": "Colobane",
     "arrets": 16,
-    "listeArrets": [
-      "Almadies",
-      "Ngor",
-      "Yoff",
-      "Ouest Foire",
-      "Liberte 6",
-      "Colobane"
-    ]
+    "listeArrets": ["Almadies","Ngor","Yoff","Ouest Foire","Liberte 6","Colobane"]
   },
   {
     "id": 6,
@@ -84,13 +45,22 @@
     "depart": "Yoff",
     "arrivee": "Sandaga",
     "arrets": 11,
-    "listeArrets": [
-      "Yoff Village",
-      "Aeroport LSS",
-      "Parcelles U17",
-      "Grand Yoff",
-      "HLM",
-      "Sandaga"
-    ]
+    "listeArrets": ["Yoff Village","Aeroport LSS","Parcelles U17","Grand Yoff","HLM","Sandaga"]
+  },
+  {
+    "id": 7,
+    "numero": "42",
+    "depart": "Thiaroye",
+    "arrivee": "Sandaga",
+    "arrets": 20,
+    "listeArrets": ["Thiaroye","Yeumbeul","Keur Massar","Grand Yoff","HLM","Colobane","Sandaga"]
+  },
+  {
+    "id": 8,
+    "numero": "55",
+    "depart": "Keur Massar",
+    "arrivee": "Universite UCAD",
+    "arrets": 25,
+    "listeArrets": ["Keur Massar","Yeumbeul","Pikine","Hann","Fann","Universite UCAD"]
   }
 ]
