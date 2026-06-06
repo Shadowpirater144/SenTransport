@@ -24,6 +24,17 @@
   border-radius: 6px;
 }
 
+/* Exo 3 Lab 6 - Styles pour la liste des 3 arrêts les plus proches */
+.arrets-proches-liste {
+  margin-bottom: 12px;
+}
+
+.arrets-proches-titre {
+  color: #2c3e50;
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+}
+
 @media (max-width: 600px) {
   .carte {
     height: 300px;

@@ -6,6 +6,9 @@ import LigneBus from './LigneBus';
 import DetailLigne from './DetailLigne';
 import Footer from './Footer';
 import Carte from './Carte';
+import Meteo from './Meteo';
+import SignalerIncident from './SignalerIncident';
+
 
 function App() {
  
@@ -128,8 +131,8 @@ function App() {
         {/* ========== (Exo 3 - Lab5) : fin ========== */}
  
         {/* onChange={handleRecherche} à la place de onChange={setRecherche} */}
-        <Recherche valeur={recherche} onChange={handleRecherche} />
- 
+      <Meteo />   
+     <Recherche valeur={recherche} onChange={handleRecherche} /> 
         <p className="resultat-recherche">
           {lignesFiltrees.length} ligne{lignesFiltrees.length > 1 ? 's' : ''} trouvee{lignesFiltrees.length > 1 ? 's' : ''}
         </p>
@@ -161,10 +164,10 @@ function App() {
  
         {ligneSelectionnee && !chargementDetail && <DetailLigne ligne={ligneSelectionnee} />}
      <Carte />
+     < SignalerIncident / >
      </main>
       <Footer />
     </div>
   );
 }
- 
 export default App;
